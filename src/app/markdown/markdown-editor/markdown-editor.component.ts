@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarkdownEditorComponent implements OnInit {
 
-  markdown: string;
+  markdown: string = `
+  # Steps
+  * Create editor component with primeng textarea widget
+  * Create pipe to return generated markdown
+  * Deploy to [Github](https://github.com)
+  * Deploy to [Zeit Now](https://zeit.co/now)`;
 
   constructor() { }
 
