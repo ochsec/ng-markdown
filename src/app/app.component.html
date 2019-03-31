@@ -1,12 +1,17 @@
 <div class="container-fluid">
-  <div class="row">
+  <nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h1">Markdown Editor</span>
+  </nav>
+  <div class="row main-content">
     <div class="col-6">
-      <h4>Markdown Editor</h4>
       <app-markdown-editor #editor></app-markdown-editor>
     </div>
     <div class="col-6">
-      <h4>Page View</h4>
-      <p [innerHtml]="editor.markdown | markdownOutput"></p>
+      <div class="card">
+        <div class="card-body">
+          <p [innerHtml]="editor.markdown | markdownOutput"></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

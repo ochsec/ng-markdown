@@ -1,0 +1,8 @@
+.main-content {
+    margin-top: 2rem;
+}
+
+.card {
+    border-radius: 8px;
+    border: 2px solid rgb(0, 86, 179, 0.5);
+}
